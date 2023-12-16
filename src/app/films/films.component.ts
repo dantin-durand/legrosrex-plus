@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { FilmService } from '../shared/film.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Location } from '@angular/common';
+import { NotationService } from '../shared/notation.service';
 
 @Component({
   selector: 'app-film',
@@ -11,19 +12,36 @@ import { Location } from '@angular/common';
 })
 export class FilmComponent implements OnInit {
   film: any;
+  notations: any[] = []; 
+  moyenneNote: number = 0;
+  index: number = 0;
 
   constructor(
     private route: ActivatedRoute,
     private filmService: FilmService,
     private sanitizer: DomSanitizer,
-    private location: Location
+    private location: Location,
+    private notationService: NotationService
+
   ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       const filmId = +params['id'];
       this.loadFilmDetails(filmId);
+
+      this.notationService.getNotesByIdFilm(filmId).subscribe(
+        notations => {
+          notations.forEach((element: any) => {
+            this.moyenneNote = this.moyenneNote + element.note
+            this.index = this.index + 1
+
+          });
+          this.moyenneNote = this.moyenneNote / this.index // afficher un chiffre apres la virgule 
+        },
+      ) 
     });
+    
   }
 
   goBack(): void {
