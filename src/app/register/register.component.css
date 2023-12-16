@@ -43,18 +43,6 @@
   color: var(--white-color);
 }
 
-.register-form button {
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  width: 100%;
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  cursor: pointer;
-}
-
 a {
   font-size: 14px;
   text-align: center;

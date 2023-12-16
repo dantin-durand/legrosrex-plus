@@ -20,7 +20,16 @@
         required="required"
       />
     </div>
-    <button type="submit">Se connecter</button>
+    <button
+      type="submit"
+      [disabled]="!loginForm.valid"
+      [ngClass]="{
+        'btn btn-primary': true,
+        'btn-disabled': !loginForm.valid
+      }"
+    >
+      Se connecter
+    </button>
     <a routerLink="/register">Vous n'avez pas de compte ?</a>
   </form>
 </div>

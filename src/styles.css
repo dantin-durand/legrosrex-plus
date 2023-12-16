@@ -232,6 +232,7 @@ button,
   margin-bottom: 20px;
   font-weight: 400;
   color: var(--white-color);
+  text-align: center;
 }
 
 .btn-primary {
@@ -245,6 +246,7 @@ button,
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -263,5 +265,11 @@ button,
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
 }

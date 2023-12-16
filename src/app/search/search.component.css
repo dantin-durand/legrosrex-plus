@@ -9,6 +9,13 @@
   margin: 0 auto;
 }
 
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .search-content {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
