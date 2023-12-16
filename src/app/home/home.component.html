@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <section class="main-thumbnail">
-  <div class="main-thumbnail-container">
+  <div class="main-thumbnail-container" *ngIf="firstFilm.id">
     <div class="main-thumbnail-content">
       <h1>{{ firstFilm.nomFilm }}</h1>
       <a [routerLink]="['/film', firstFilm.id]" class="btn btn-primary">
