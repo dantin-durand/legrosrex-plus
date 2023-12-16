@@ -1,4 +1,5 @@
 // navbar.component.ts
+import { Location } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -24,14 +25,21 @@ export class NavbarComponent implements AfterViewInit {
   search: string = '';
   private searchTimeout: any;
 
+  constructor(private el: ElementRef, private location: Location) {}
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 0;
   }
 
   ngAfterViewInit(): void {
-    if (this.searchInput && this.activeSearch)
+    if (this.searchInput && this.activeSearch) {
       this.searchInput.nativeElement.focus();
+
+      this.searchInput.nativeElement.addEventListener('focusout', () => {
+        if (!this.search.length) this.location.back();
+      });
+    }
   }
 
   onSearch(): void {

@@ -1,4 +1,4 @@
-<a [routerLink]="['/film', film.id]" class="category-item">
+<a [routerLink]="['/film', film.id]" class="category-item" *ngIf="film.id">
   <img [src]="'assets/affiches/' + film.id + '.jpg'" alt="Background" />
   <div class="category-item-overlay">
     <h3>
