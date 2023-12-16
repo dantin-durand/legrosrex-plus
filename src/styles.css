@@ -1,1 +1,222 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #db0000;
+  --secondary-color: #000000;
+  --tertiary-color: #564d4d;
+  --white-color: #ffffff;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Bebas Neue", cursive;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+img,
+video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h3 {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h4 {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h5 {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h6 {
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+p {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+button {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}

@@ -1,0 +1,26 @@
+<div class="login-wrapper" style="background-image: url('assets/bg.jpg')">
+  <img src="assets/logo.svg" alt="Logo" class="logo" />
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+    <h1>Connexion</h1>
+    <div>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        placeholder="Adresse mail"
+        required="required"
+      />
+    </div>
+    <div>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        placeholder="Mot de passe"
+        required="required"
+      />
+    </div>
+    <button type="submit">Se connecter</button>
+    <a routerLink="/register">Vous n'avez pas de compte ?</a>
+  </form>
+</div>
