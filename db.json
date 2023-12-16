@@ -1,13 +1,33 @@
 {
   "categories": [
-    { "id": 1, "name": "Action" },
-    { "id": 2, "name": "Comédie" },
-    { "id": 3, "name": "Drame" },
-    { "id": 4, "name": "Science-fiction" },
-    { "id": 5, "name": "Thriller" }
+    {
+      "id": 1,
+      "name": "Action"
+    },
+    {
+      "id": 2,
+      "name": "Comédie"
+    },
+    {
+      "id": 3,
+      "name": "Drame"
+    },
+    {
+      "id": 4,
+      "name": "Science-fiction"
+    },
+    {
+      "id": 5,
+      "name": "Thriller"
+    }
   ],
   "films": [
-    { "IdCategorie": 1, "id": 1, "nomFilm": "Léon", "urlFilm": "vSi5jdziv3I" },
+    {
+      "IdCategorie": 1,
+      "id": 1,
+      "nomFilm": "Léon",
+      "urlFilm": "vSi5jdziv3I"
+    },
     {
       "IdCategorie": 1,
       "id": 2,
@@ -32,7 +52,6 @@
       "nomFilm": "The Passenger",
       "urlFilm": "LGKxT2aEcQE"
     },
-
     {
       "IdCategorie": 2,
       "id": 6,
@@ -63,8 +82,12 @@
       "nomFilm": "En passant pécho",
       "urlFilm": "vHTr85ccYlU"
     },
-
-    { "IdCategorie": 3, "id": 11, "nomFilm": "Fury", "urlFilm": "PJTkKIxNJAg" },
+    {
+      "IdCategorie": 3,
+      "id": 11,
+      "nomFilm": "Fury",
+      "urlFilm": "PJTkKIxNJAg"
+    },
     {
       "IdCategorie": 3,
       "id": 12,
@@ -89,7 +112,6 @@
       "nomFilm": "Le Mans 66",
       "urlFilm": "maxybmxQuTE"
     },
-
     {
       "IdCategorie": 4,
       "id": 16,
@@ -102,15 +124,24 @@
       "nomFilm": "Interstellar",
       "urlFilm": "VaOijhK3CRU"
     },
-    { "IdCategorie": 4, "id": 18, "nomFilm": "Dune", "urlFilm": "gHt8tCHbB2M" },
-    { "IdCategorie": 4, "id": 19, "nomFilm": "2067", "urlFilm": "cU5875rHQ8k" },
+    {
+      "IdCategorie": 4,
+      "id": 18,
+      "nomFilm": "Dune",
+      "urlFilm": "gHt8tCHbB2M"
+    },
+    {
+      "IdCategorie": 4,
+      "id": 19,
+      "nomFilm": "2067",
+      "urlFilm": "cU5875rHQ8k"
+    },
     {
       "IdCategorie": 4,
       "id": 20,
       "nomFilm": "Bienvenue à Gattaca",
       "urlFilm": "NIIZ2P-fiyI"
     },
-
     {
       "IdCategorie": 5,
       "id": 21,
@@ -179,6 +210,12 @@
       "IdUser": 2,
       "commentaire": "Excellent thriller",
       "note": 4
+    },
+    {
+      "IdFilm": 1,
+      "note": 4,
+      "commentaire": "TEST",
+      "id": 4
     }
   ]
 }
