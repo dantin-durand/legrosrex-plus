@@ -1,0 +1,33 @@
+.main-thumbnail {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  max-height: 110vh;
+}
+
+.main-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.main-thumbnail-content {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  z-index: 1;
+}

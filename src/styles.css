@@ -7,6 +7,9 @@
   --white-color: #ffffff;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Bebas Neue", cursive;
+
+  --transition-speed: 600ms;
+  --max-width: 1440px;
 }
 
 a,
