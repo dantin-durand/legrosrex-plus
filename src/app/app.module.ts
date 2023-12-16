@@ -12,6 +12,8 @@ import { FilmComponent } from './films/films.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CategoryComponent } from './home/category/category.component';
+import { SearchComponent } from './search/search.component';
+import { FilmCardComponent } from './film-card/film-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { CategoryComponent } from './home/category/category.component';
     NavbarComponent,
     FilmComponent,
     CategoryComponent,
+    SearchComponent,
+    FilmCardComponent,
   ],
   imports: [
     BrowserModule,

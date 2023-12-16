@@ -4,7 +4,7 @@
   <div class="film-presentation-container" *ngIf="film">
     <div class="film-presentation-header">
       <div>
-        <a routerLink="/" class="btn btn-secondary">
+        <a (click)="goBack()" class="btn btn-secondary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"

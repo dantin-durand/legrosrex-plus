@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FilmService } from '../shared/film.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-film',
@@ -14,7 +15,8 @@ export class FilmComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private filmService: FilmService,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private location: Location
   ) {}
 
   ngOnInit(): void {
@@ -22,6 +24,10 @@ export class FilmComponent implements OnInit {
       const filmId = +params['id'];
       this.loadFilmDetails(filmId);
     });
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
   loadFilmDetails(filmId: number): void {

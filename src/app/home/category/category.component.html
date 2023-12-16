@@ -2,18 +2,7 @@
   <div class="container">
     <h2>{{ category.name }}</h2>
     <div class="category-content">
-      <a
-        [routerLink]="['/film', film.id]"
-        class="category-item"
-        *ngFor="let film of films"
-      >
-        <img [src]="'assets/affiches/' + film.id + '.jpg'" alt="Background" />
-        <div class="category-item-overlay">
-          <h3>
-            {{ film.nomFilm }}
-          </h3>
-        </div>
-      </a>
+      <app-film-card *ngFor="let film of films" [film]="film"></app-film-card>
     </div>
   </div>
 </section>

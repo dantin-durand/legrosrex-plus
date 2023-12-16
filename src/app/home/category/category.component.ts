@@ -13,7 +13,6 @@ export class CategoryComponent implements OnInit {
   constructor(private filmService: FilmService) {}
 
   ngOnInit(): void {
-    console.log(this.category);
     this.loadFilms();
   }
 
