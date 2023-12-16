@@ -19,7 +19,7 @@ import { CategoryComponent } from './home/category/category.component';
     RegisterComponent,
     HomeComponent,
     NavbarComponent,
-    FilmComponent
+    FilmComponent,
     CategoryComponent,
   ],
   imports: [
