@@ -1,35 +1,17 @@
 <section class="category-container">
   <div class="container">
-    <h2>Les films</h2>
+    <h2>{{ category.name }}</h2>
     <div class="category-content">
-      <a href="#" class="category-item">
-        <img src="assets/affiches/1.jpg" alt="Background" />
+      <a
+        [routerLink]="['/film', film.id]"
+        class="category-item"
+        *ngFor="let film of films"
+      >
+        <img [src]="'assets/affiches/' + film.id + '.jpg'" alt="Background" />
         <div class="category-item-overlay">
-          <h3>Titre</h3>
-        </div>
-      </a>
-      <a href="#" class="category-item">
-        <img src="assets/affiches/2.jpg" alt="Background" />
-        <div class="category-item-overlay">
-          <h3>Titre</h3>
-        </div>
-      </a>
-      <a href="#" class="category-item">
-        <img src="assets/affiches/3.jpg" alt="Background" />
-        <div class="category-item-overlay">
-          <h3>Titre</h3>
-        </div>
-      </a>
-      <a href="#" class="category-item">
-        <img src="assets/affiches/4.jpg" alt="Background" />
-        <div class="category-item-overlay">
-          <h3>Titre</h3>
-        </div>
-      </a>
-      <a href="#" class="category-item">
-        <img src="assets/affiches/5.jpg" alt="Background" />
-        <div class="category-item-overlay">
-          <h3>Titre</h3>
+          <h3>
+            {{ film.nomFilm }}
+          </h3>
         </div>
       </a>
     </div>

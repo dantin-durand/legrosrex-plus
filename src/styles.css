@@ -2,6 +2,8 @@
 
 :root {
   --primary-color: #db0000;
+  --primary-color-light: #ff0000;
+  --primary-color-dark: #a80000;
   --secondary-color: #000000;
   --tertiary-color: #564d4d;
   --white-color: #ffffff;
@@ -166,6 +168,7 @@ h1 {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 h2 {
@@ -174,6 +177,7 @@ h2 {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 h3 {
@@ -182,6 +186,7 @@ h3 {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 h4 {
@@ -190,6 +195,7 @@ h4 {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 h5 {
@@ -198,6 +204,7 @@ h5 {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 h6 {
@@ -206,6 +213,7 @@ h6 {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 p {
@@ -214,6 +222,7 @@ p {
   margin-bottom: 20px;
   font-weight: 400;
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 button,
@@ -221,12 +230,30 @@ button,
   font-family: var(--primary-font);
   font-size: 1rem;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--white-color);
 }
 
 .btn-primary {
   background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
   color: var(--white-color);
   padding: 10px 20px;
   border-radius: 5px;

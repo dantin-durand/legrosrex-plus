@@ -2,8 +2,8 @@
 <section class="main-thumbnail">
   <div class="main-thumbnail-container">
     <div class="main-thumbnail-content">
-      <h1>Un film</h1>
-      <a href="#" class="btn btn-primary">
+      <h1>{{ firstFilm.nomFilm }}</h1>
+      <a [routerLink]="['/film', firstFilm.id]" class="btn btn-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -20,11 +20,11 @@
     </div>
   </div>
   <div class="main-thumbnail-overlay"></div>
-  <img src="assets/affiches/3.jpg" alt="Background" />
+  <img [src]="'assets/affiches/' + firstFilm.id + '.jpg'" alt="Background" />
 </section>
 <div class="category-list">
-  <app-category></app-category>
-  <app-category></app-category>
-  <app-category></app-category>
-  <app-category></app-category>
+  <app-category
+    *ngFor="let category of categories"
+    [category]="category"
+  ></app-category>
 </div>

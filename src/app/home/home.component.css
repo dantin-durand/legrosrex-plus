@@ -47,6 +47,10 @@
   align-items: flex-start;
 }
 
+.main-thumbnail-content h1 {
+  width: 50%;
+}
+
 .category-list {
   display: flex;
   flex-direction: column;

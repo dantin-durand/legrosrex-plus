@@ -10,7 +10,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { FilmComponent } from './films/films.component';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './home/navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { CategoryComponent } from './home/category/category.component';
 @NgModule({
   declarations: [

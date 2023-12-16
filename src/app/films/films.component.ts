@@ -11,7 +11,11 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class FilmComponent implements OnInit {
   film: any;
 
-  constructor(private route: ActivatedRoute, private filmService: FilmService, private sanitizer: DomSanitizer) {}
+  constructor(
+    private route: ActivatedRoute,
+    private filmService: FilmService,
+    private sanitizer: DomSanitizer
+  ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
@@ -26,8 +30,8 @@ export class FilmComponent implements OnInit {
     });
   }
 
-getSafeYoutubeUrl(videoId: string): SafeResourceUrl {
-  const url = `https://www.youtube.com/embed/${videoId}`;
-  return this.sanitizer.bypassSecurityTrustResourceUrl(url);
-}
+  getSafeYoutubeUrl(videoId: string): SafeResourceUrl {
+    const url = `https://www.youtube.com/embed/${videoId}`;
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
 }

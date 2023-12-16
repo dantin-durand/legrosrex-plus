@@ -1,49 +1,184 @@
 {
-    "categories": [
-      { "id": 1, "nomCategorie": "Action" },
-      { "id": 2, "nomCategorie": "Comédie" },
-      { "id": 3, "nomCategorie": "Drame" },
-      { "id": 4, "nomCategorie": "Science-fiction" },
-      { "id": 5, "nomCategorie": "Thriller" }
-    ],
-    "films": [
-      { "IdCategorie": 1, "id": 1, "nomFilm": "Léon", "urlFilm": "vSi5jdziv3I" },
-      { "IdCategorie": 1, "id": 2, "nomFilm": "En eaux très troubles", "urlFilm": "a1FKaXY3H04" },
-      { "IdCategorie": 1, "id": 3, "nomFilm": "Everything Everywhere All at Once", "urlFilm": "wxN1T1uxQ2g" },
-      { "IdCategorie": 1, "id": 4, "nomFilm": "The Covenant : Mission en Afghanistan", "urlFilm": "02PPMPArNEQ" },
-      { "IdCategorie": 1, "id": 5, "nomFilm": "The Passenger", "urlFilm": "LGKxT2aEcQE" },
+  "categories": [
+    { "id": 1, "name": "Action" },
+    { "id": 2, "name": "Comédie" },
+    { "id": 3, "name": "Drame" },
+    { "id": 4, "name": "Science-fiction" },
+    { "id": 5, "name": "Thriller" }
+  ],
+  "films": [
+    { "IdCategorie": 1, "id": 1, "nomFilm": "Léon", "urlFilm": "vSi5jdziv3I" },
+    {
+      "IdCategorie": 1,
+      "id": 2,
+      "nomFilm": "En eaux très troubles",
+      "urlFilm": "a1FKaXY3H04"
+    },
+    {
+      "IdCategorie": 1,
+      "id": 3,
+      "nomFilm": "Everything Everywhere All at Once",
+      "urlFilm": "wxN1T1uxQ2g"
+    },
+    {
+      "IdCategorie": 1,
+      "id": 4,
+      "nomFilm": "The Covenant : Mission en Afghanistan",
+      "urlFilm": "02PPMPArNEQ"
+    },
+    {
+      "IdCategorie": 1,
+      "id": 5,
+      "nomFilm": "The Passenger",
+      "urlFilm": "LGKxT2aEcQE"
+    },
 
-      { "IdCategorie": 2, "id": 6, "nomFilm": "Nos jours heureux", "urlFilm": "e9d_PVFIBP8" },
-      { "IdCategorie": 2, "id": 7, "nomFilm": "Le Clan", "urlFilm": "YY-l4YMDIwY" },
-      { "IdCategorie": 2, "id": 8, "nomFilm": "Free Guy", "urlFilm": "sL5SgG_mxF8" },
-      { "IdCategorie": 2, "id": 9, "nomFilm": "OSS 117 : Le Caire, nid d'espions", "urlFilm": "KnM3cuHaz1A" },
-      { "IdCategorie": 2, "id": 10, "nomFilm": "En passant pécho", "urlFilm": "vHTr85ccYlU" },
+    {
+      "IdCategorie": 2,
+      "id": 6,
+      "nomFilm": "Nos jours heureux",
+      "urlFilm": "e9d_PVFIBP8"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 7,
+      "nomFilm": "Le Clan",
+      "urlFilm": "YY-l4YMDIwY"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 8,
+      "nomFilm": "Free Guy",
+      "urlFilm": "sL5SgG_mxF8"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 9,
+      "nomFilm": "OSS 117 : Le Caire, nid d'espions",
+      "urlFilm": "KnM3cuHaz1A"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 10,
+      "nomFilm": "En passant pécho",
+      "urlFilm": "vHTr85ccYlU"
+    },
 
-      { "IdCategorie": 3, "id": 11, "nomFilm": "Fury", "urlFilm": "PJTkKIxNJAg" },
-      { "IdCategorie": 3, "id": 12, "nomFilm": "Invictus", "urlFilm": "PEO6-fe9qPA" },
-      { "IdCategorie": 3, "id": 13, "nomFilm": "Parasite", "urlFilm": "BboKKBYx7-0" },
-      { "IdCategorie": 3, "id": 14, "nomFilm": "Le Tourbillon de la vie", "urlFilm": "ibYjECHjPNw" },
-      { "IdCategorie": 3, "id": 15, "nomFilm": "Le Mans 66", "urlFilm": "maxybmxQuTE" },
+    { "IdCategorie": 3, "id": 11, "nomFilm": "Fury", "urlFilm": "PJTkKIxNJAg" },
+    {
+      "IdCategorie": 3,
+      "id": 12,
+      "nomFilm": "Invictus",
+      "urlFilm": "PEO6-fe9qPA"
+    },
+    {
+      "IdCategorie": 3,
+      "id": 13,
+      "nomFilm": "Parasite",
+      "urlFilm": "BboKKBYx7-0"
+    },
+    {
+      "IdCategorie": 3,
+      "id": 14,
+      "nomFilm": "Le Tourbillon de la vie",
+      "urlFilm": "ibYjECHjPNw"
+    },
+    {
+      "IdCategorie": 3,
+      "id": 15,
+      "nomFilm": "Le Mans 66",
+      "urlFilm": "maxybmxQuTE"
+    },
 
-      { "IdCategorie": 4, "id": 16, "nomFilm": "Inception", "urlFilm": "CPTIgILtna8" },
-      { "IdCategorie": 4, "id": 17, "nomFilm": "Interstellar", "urlFilm": "VaOijhK3CRU" },
-      { "IdCategorie": 4, "id": 18, "nomFilm": "Dune", "urlFilm": "gHt8tCHbB2M" },
-      { "IdCategorie": 4, "id": 19, "nomFilm": "2067", "urlFilm": "cU5875rHQ8k" },
-      { "IdCategorie": 4, "id": 20, "nomFilm": "Bienvenue à Gattaca", "urlFilm": "NIIZ2P-fiyI" },
+    {
+      "IdCategorie": 4,
+      "id": 16,
+      "nomFilm": "Inception",
+      "urlFilm": "CPTIgILtna8"
+    },
+    {
+      "IdCategorie": 4,
+      "id": 17,
+      "nomFilm": "Interstellar",
+      "urlFilm": "VaOijhK3CRU"
+    },
+    { "IdCategorie": 4, "id": 18, "nomFilm": "Dune", "urlFilm": "gHt8tCHbB2M" },
+    { "IdCategorie": 4, "id": 19, "nomFilm": "2067", "urlFilm": "cU5875rHQ8k" },
+    {
+      "IdCategorie": 4,
+      "id": 20,
+      "nomFilm": "Bienvenue à Gattaca",
+      "urlFilm": "NIIZ2P-fiyI"
+    },
 
-      { "IdCategorie": 5, "id": 21, "nomFilm": "Shutter Island", "urlFilm": "YDGldPitxic" },
-      { "IdCategorie": 5, "id": 22, "nomFilm": "Silent Hill", "urlFilm": "O2EmgMNbR7U" },
-      { "IdCategorie": 5, "id": 23, "nomFilm": "Prisoners", "urlFilm": "47LneWrxIz8" },
-      { "IdCategorie": 5, "id": 24, "nomFilm": "Le Silence des agneaux", "urlFilm": "6iB21hsprAQ" },
-      { "IdCategorie": 5, "id": 25, "nomFilm": "Voleuses", "urlFilm": "el3bY610Btw" }
-    ],
-    "users": [
-      { "id" : 1, "name": "John Doe", "email": "john.doe@example.com", "birthdate": "1990-01-01", "password": "password123" },
-      { "id" : 2, "name": "Jane Doe", "email": "jane.doe@example.com", "birthdate": "1995-05-15", "password": "qwerty456" }
-    ],
-    "notes": [
-      { "id" : 1, "IdFilm": 1, "IdUser": 1, "commentaire": "Très bon film", "note": 4 },
-      { "id" : 2, "IdFilm": 1, "IdUser": 2, "commentaire": "J'ai adoré l'action", "note": 5 },
-      { "id" : 3, "IdFilm": 2, "IdUser": 2, "commentaire": "Excellent thriller", "note": 4 }
-    ]
-  }
+    {
+      "IdCategorie": 5,
+      "id": 21,
+      "nomFilm": "Shutter Island",
+      "urlFilm": "YDGldPitxic"
+    },
+    {
+      "IdCategorie": 5,
+      "id": 22,
+      "nomFilm": "Silent Hill",
+      "urlFilm": "O2EmgMNbR7U"
+    },
+    {
+      "IdCategorie": 5,
+      "id": 23,
+      "nomFilm": "Prisoners",
+      "urlFilm": "47LneWrxIz8"
+    },
+    {
+      "IdCategorie": 5,
+      "id": 24,
+      "nomFilm": "Le Silence des agneaux",
+      "urlFilm": "6iB21hsprAQ"
+    },
+    {
+      "IdCategorie": 5,
+      "id": 25,
+      "nomFilm": "Voleuses",
+      "urlFilm": "el3bY610Btw"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "birthdate": "1990-01-01",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "birthdate": "1995-05-15",
+      "password": "qwerty456"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "IdFilm": 1,
+      "IdUser": 1,
+      "commentaire": "Très bon film",
+      "note": 4
+    },
+    {
+      "id": 2,
+      "IdFilm": 1,
+      "IdUser": 2,
+      "commentaire": "J'ai adoré l'action",
+      "note": 5
+    },
+    {
+      "id": 3,
+      "IdFilm": 2,
+      "IdUser": 2,
+      "commentaire": "Excellent thriller",
+      "note": 4
+    }
+  ]
+}
