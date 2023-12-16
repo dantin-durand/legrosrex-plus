@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+
+import { FilmComponent } from './films/films.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { CategoryComponent } from './home/category/category.component';
@@ -17,6 +19,7 @@ import { CategoryComponent } from './home/category/category.component';
     RegisterComponent,
     HomeComponent,
     NavbarComponent,
+    FilmComponent
     CategoryComponent,
   ],
   imports: [
