@@ -12,7 +12,7 @@ import { NotationService } from '../shared/notation.service';
 })
 export class FilmComponent implements OnInit {
   film: any;
-  notations: any[] = []; 
+  notations: any[] = [];
   moyenneNote: number = 0;
   index: number = 0;
 
@@ -22,7 +22,6 @@ export class FilmComponent implements OnInit {
     private sanitizer: DomSanitizer,
     private location: Location,
     private notationService: NotationService
-
   ) {}
 
   ngOnInit(): void {
@@ -30,18 +29,14 @@ export class FilmComponent implements OnInit {
       const filmId = +params['id'];
       this.loadFilmDetails(filmId);
 
-      this.notationService.getNotesByIdFilm(filmId).subscribe(
-        notations => {
-          notations.forEach((element: any) => {
-            this.moyenneNote = this.moyenneNote + element.note
-            this.index = this.index + 1
-
-          });
-          this.moyenneNote = this.moyenneNote / this.index // afficher un chiffre apres la virgule 
-        },
-      ) 
+      this.notationService.getNotesByIdFilm(filmId).subscribe((notations) => {
+        notations.forEach((element: any) => {
+          this.moyenneNote = this.moyenneNote + element.note;
+          this.index = this.index + 1;
+        });
+        this.moyenneNote = this.moyenneNote / this.index; // afficher un chiffre apres la virgule
+      });
     });
-    
   }
 
   goBack(): void {

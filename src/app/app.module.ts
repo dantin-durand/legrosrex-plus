@@ -15,6 +15,7 @@ import { CategoryComponent } from './home/category/category.component';
 import { SearchComponent } from './search/search.component';
 import { FilmCardComponent } from './film-card/film-card.component';
 import { NotationComponent } from './notation/notation.component';
+import { RoundNumberPipe } from './pipes/round-number.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { NotationComponent } from './notation/notation.component';
     SearchComponent,
     FilmCardComponent,
     NotationComponent,
+    RoundNumberPipe,
   ],
   imports: [
     BrowserModule,

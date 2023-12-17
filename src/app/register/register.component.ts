@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { birthdateValidator } from 'src/app/validators/birthdateValidator';
+import { birthdateValidator } from 'src/app/validators/birthdate.validator';
 import { AuthentificationService } from '../shared/authentification.service';
 import { Router } from '@angular/router';
 
