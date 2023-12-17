@@ -36,6 +36,6 @@
     </div>
   </div>
   <div>
-    <h2 [appRatingColor]="moyenneNote | roundNumber">{{ moyenneNote | roundNumber }}/5</h2>
+    <h2 *ngIf="moyenneNote" [appRatingColor]="moyenneNote | roundNumber">{{ moyenneNote | roundNumber }}/5</h2>
   </div>
 </section>
