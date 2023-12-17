@@ -10,6 +10,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
+import { AuthentificationService } from '../shared/authentification.service';
 
 @Component({
   selector: 'app-navbar',
@@ -25,7 +26,11 @@ export class NavbarComponent implements AfterViewInit {
   search: string = '';
   private searchTimeout: any;
 
-  constructor(private el: ElementRef, private location: Location) {}
+  constructor(
+    private el: ElementRef,
+    private location: Location,
+    private authentificationService: AuthentificationService
+  ) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -50,5 +55,9 @@ export class NavbarComponent implements AfterViewInit {
     this.searchTimeout = setTimeout(() => {
       this.searchEvent.emit(this.search);
     }, 300);
+  }
+
+  onLogout(): void {
+    this.authentificationService.logout();
   }
 }

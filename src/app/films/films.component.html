@@ -21,7 +21,9 @@
 
         <h2>{{ film.nomFilm }}</h2>
       </div>
-      <a [routerLink]="['/notation', film.id]">Noter ce film</a>
+      <a [routerLink]="['/notation', film.id]" class="btn btn-primary"
+        >Noter ce film
+      </a>
     </div>
     <div class="film-presentation-video-container">
       <iframe
@@ -34,7 +36,6 @@
     </div>
   </div>
   <div>
-    <h2>{{ moyenneNote}}/5</h2>
+    <h2>{{ moyenneNote }}/5</h2>
   </div>
-  
 </section>

@@ -6,15 +6,19 @@ import { FilmComponent } from '../app/films/films.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NotationComponent } from './notation/notation.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'film/:id', component: FilmComponent },
-  { path: 'notation/:id', component: NotationComponent },
-  { path: 'search', component: SearchComponent },
+  { path: '', canActivate: [AuthGuard], component: HomeComponent },
+  { path: 'film/:id', canActivate: [AuthGuard], component: FilmComponent },
+  {
+    path: 'notation/:id',
+    canActivate: [AuthGuard],
+    component: NotationComponent,
+  },
+  { path: 'search', canActivate: [AuthGuard], component: SearchComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  
 ];
 
 @NgModule({

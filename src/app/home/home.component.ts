@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from '../shared/category.service';
 import { FilmService } from '../shared/film.service';
 
@@ -14,12 +14,14 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private categoryService: CategoryService,
-    private filmService: FilmService
+    private filmService: FilmService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.loadCategories();
     this.loadRandomFilm();
+    this.checkUser();
   }
 
   loadCategories(): void {
@@ -32,5 +34,11 @@ export class HomeComponent implements OnInit {
     this.filmService.getRandomFilm().subscribe((film) => {
       this.firstFilm = film;
     });
+  }
+
+  checkUser(): void {
+    // if (!localStorage.getItem('user')) {
+    //   this.router.navigate(['/login']);
+    // }
   }
 }

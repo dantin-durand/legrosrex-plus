@@ -187,6 +187,13 @@
       "email": "jane.doe@example.com",
       "birthdate": "1995-05-15",
       "password": "qwerty456"
+    },
+    {
+      "name": "redvinyle",
+      "birthdate": "2001-10-11",
+      "email": "durand.dantin.pro@gmail.com",
+      "password": "azertyuiop",
+      "id": 3
     }
   ],
   "notes": [
@@ -216,6 +223,12 @@
       "note": 4,
       "commentaire": "TEST",
       "id": 4
+    },
+    {
+      "IdFilm": 2,
+      "note": 3,
+      "commentaire": "test",
+      "id": 5
     }
   ]
 }

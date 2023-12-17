@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { birthdateValidator } from 'src/helpers/birthdateValidator';
+import { birthdateValidator } from 'src/app/validators/birthdateValidator';
+import { AuthentificationService } from '../shared/authentification.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +12,11 @@ import { birthdateValidator } from 'src/helpers/birthdateValidator';
 export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private authentificationService: AuthentificationService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -22,6 +28,11 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log(this.registerForm.value);
+    this.authentificationService
+      .sendRegisterForm(this.registerForm.value)
+      .subscribe((user) => {
+        localStorage.setItem('user', JSON.stringify(user));
+        this.router.navigate(['/']);
+      });
   }
 }
