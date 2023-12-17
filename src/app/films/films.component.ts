@@ -4,7 +4,6 @@ import { FilmService } from '../shared/film.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 import { NotationService } from '../shared/notation.service';
-
 @Component({
   selector: 'app-film',
   templateUrl: './films.component.html',
@@ -21,7 +20,8 @@ export class FilmComponent implements OnInit {
     private filmService: FilmService,
     private sanitizer: DomSanitizer,
     private location: Location,
-    private notationService: NotationService
+    private notationService: NotationService,
+
   ) {}
 
   ngOnInit(): void {
@@ -34,7 +34,7 @@ export class FilmComponent implements OnInit {
           this.moyenneNote = this.moyenneNote + element.note;
           this.index = this.index + 1;
         });
-        this.moyenneNote = this.moyenneNote / this.index; // afficher un chiffre apres la virgule
+        this.moyenneNote = this.moyenneNote / this.index;
       });
     });
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FilmService } from '../shared/film.service'; // Assurez-vous de remplacer cela par le chemin réel vers votre service
+import { FilmService } from '../shared/film.service'; 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NotationService } from '../shared/notation.service';
 
@@ -11,7 +11,7 @@ import { NotationService } from '../shared/notation.service';
 })
 export class NotationComponent implements OnInit {
   filmId: any;
-  film: any; // Assurez-vous d'utiliser le type approprié pour vos données de film
+  film: any; 
   notationForm: FormGroup;
   selectedRating: number = 0;
   stars: number[] = [1, 2, 3, 4, 5];
@@ -19,9 +19,9 @@ export class NotationComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private filmService: FilmService, // Assurez-vous d'importer votre service de films
+    private filmService: FilmService, 
     private formBuilder: FormBuilder,
-    private notationService: NotationService
+    private notationService: NotationService,
   ) {
     this.notationForm = this.formBuilder.group({
       rating: [Number, Validators.required],
@@ -38,12 +38,6 @@ export class NotationComponent implements OnInit {
     this.notationService.getNotesByIdFilm(this.filmId).subscribe(
       (notations) => {
         this.notations = notations;
-        console.log(
-          'Notations du film avec IdFilm=',
-          this.filmId,
-          ':',
-          notations
-        );
       },
       (error) => {
         console.error(
@@ -62,18 +56,16 @@ export class NotationComponent implements OnInit {
     this.selectedRating = rating;
   }
 
-  submitNotation() {
+  async submitNotation() {
     if (this.notationForm.valid) {
       const notationData = {
         IdFilm: this.filmId,
-        //idUser : //id du user
         note: this.selectedRating,
         commentaire: this.notationForm.get('comment')?.value,
       };
 
       this.notationService.addNotation(notationData).subscribe(
         (response) => {
-          console.log('Notation ajoutée avec succès:', response);
           window.location.href = `http://localhost:4200/film/${this.filmId}`;
         },
         (error) => {

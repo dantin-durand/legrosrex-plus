@@ -16,6 +16,8 @@ import { SearchComponent } from './search/search.component';
 import { FilmCardComponent } from './film-card/film-card.component';
 import { NotationComponent } from './notation/notation.component';
 import { RoundNumberPipe } from './pipes/round-number.pipe';
+import { RatingColorDirective } from './shared/directives/RatingColorDirective .directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,8 @@ import { RoundNumberPipe } from './pipes/round-number.pipe';
     FilmCardComponent,
     NotationComponent,
     RoundNumberPipe,
+    RatingColorDirective,
+
   ],
   imports: [
     BrowserModule,
